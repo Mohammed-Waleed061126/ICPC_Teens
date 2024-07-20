@@ -47,6 +47,15 @@ ll count_string(string word, string fnd, ll size1, ll size2) {
   }
   return count;
 }
+ll gcd(ll a, ll b){
+  while (b != 0)
+  {
+    ll t = b;
+    b = a % b;
+    a = t;
+  }
+  return a;
+}
 ld Gcd(ld x, ld y){
   return fabs(y)<1e-2?x:Gcd(y,fmod(x,y));
 }
